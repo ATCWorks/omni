@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>401 - Yetkisiz Erişim | OMNi Forum</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #2b00ff; --bg: #050505; }
+        body { background: var(--bg); color: white; font-family: 'Plus Jakarta Sans', sans-serif; overflow: hidden; }
+        .grid-bg { position: fixed; inset: 0; background-image: linear-gradient(rgba(43,0,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(43,0,255,0.1) 1px, transparent 1px); background-size: 60px 60px; z-index: -1; }
+        .lock-icon { font-size: 5rem; color: var(--accent); margin-bottom: 1rem; animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(1.1); } }
+        .btn-pasa { border: 1px solid rgba(255,255,255,0.2); padding: 12px 32px; border-radius: 8px; font-weight: 600; transition: 0.3s; }
+        .btn-pasa:hover { background: white; color: black; }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+    <div class="grid-bg"></div>
+    <div class="text-center px-4">
+        <div class="lock-icon">>:(</div>
+        <h1 class="text-8xl font-black tracking-tighter">401</h1>
+        <h2 class="text-2xl font-bold mt-2">Kimlik Doğrulama Gerekli</h2>
+        <p class="text-gray-400 mt-2 max-w-md mx-auto">Bu alana girmek için OMNi kimlik bilgilerinizle giriş yapmanız gerekmektedir.</p>
+        <div class="mt-8 flex gap-4 justify-center">
+            <a href="/login" class="bg-white text-black px-8 py-3 rounded-lg font-bold">Giriş Yap</a>
+            <a href="/" class="btn-pasa">Geri Dön</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>400 - Geçersiz İstek | OMNi Forum</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #00ff88; --bg: #050505; }
+        body { background: var(--bg); color: white; font-family: 'Plus Jakarta Sans', sans-serif; overflow: hidden; }
+        .grid-bg { position: fixed; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px); background-size: 40px 40px; z-index: -1; mask-image: radial-gradient(circle at center, black, transparent 80%); }
+        .glitch { font-size: 10rem; font-weight: 800; position: relative; text-shadow: 0.05em 0 0 #ff3366, -0.05em -0.025em 0 #00ff88, 0.025em 0.05em 0 #2b00ff; animation: glitch 1s infinite; }
+        @keyframes glitch { 0% { text-shadow: 0.05em 0 0 #ff3366; } 14% { text-shadow: 0.05em 0 0 #ff3366, -0.05em -0.025em 0 #00ff88; } 100% { text-shadow: -0.025em 0 0 #ff3366, -0.025em -0.025em 0 #00ff88; } }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+    <div class="grid-bg"></div>
+    <div class="text-center px-4">
+        <span class="text-xs tracking-[0.4em] text-gray-500 uppercase mb-4 block">Hata Protokolü</span>
+        <h1 class="glitch" data-text="400">400</h1>
+        <h2 class="text-2xl font-bold mt-4">Geçersiz İstek</h2>
+        <p class="text-gray-400 mt-2 max-w-md mx-auto">Sunucu gönderdiğiniz verileri anlamlandıramadı. Lütfen formu kontrol edip tekrar deneyin.</p>
+    </div>
+</body>
+</html>

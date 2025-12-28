@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Sayfa Bulunamadı | OMNi Forum</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #00ff88; --bg: #050505; }
+        body { background: var(--bg); color: white; font-family: 'Plus Jakarta Sans', sans-serif; overflow: hidden; margin: 0; }
+        .grid-bg { position: fixed; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px); background-size: 40px 40px; z-index: -1; mask-image: radial-gradient(circle at center, black, transparent 80%); }
+        .glitch { font-size: clamp(8rem, 20vw, 12rem); font-weight: 800; position: relative; text-shadow: 0.05em 0 0 #ff3366, -0.05em -0.025em 0 #00ff88, 0.025em 0.05em 0 #2b00ff; animation: glitch 1.5s infinite; letter-spacing: -0.05em; }
+        @keyframes glitch {
+            0% { text-shadow: 0.05em 0 0 #ff3366, -0.05em -0.025em 0 #00ff88, 0.025em 0.05em 0 #2b00ff; }
+            14% { text-shadow: 0.05em 0 0 #ff3366, -0.05em -0.025em 0 #00ff88, 0.025em 0.05em 0 #2b00ff; }
+            15% { text-shadow: -0.05em -0.025em 0 #ff3366, 0.025em 0.025em 0 #00ff88, -0.05em -0.05em 0 #2b00ff; }
+            49% { text-shadow: -0.05em -0.025em 0 #ff3366, 0.025em 0.025em 0 #00ff88, -0.05em -0.05em 0 #2b00ff; }
+            50% { text-shadow: 0.025em 0.05em 0 #ff3366, 0.05em 0 0 #00ff88, 0.05em -0.025em 0 #2b00ff; }
+            99% { text-shadow: 0.025em 0.05em 0 #ff3366, 0.05em 0 0 #00ff88, 0.05em -0.025em 0 #2b00ff; }
+            100% { text-shadow: -0.025em 0 0 #ff3366, -0.025em -0.025em 0 #00ff88, -0.025em -0.05em 0 #2b00ff; }
+        }
+        .btn-pasa { background: white; color: black; padding: 14px 40px; border-radius: 4px; font-weight: 800; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); text-transform: uppercase; letter-spacing: 0.1em; position: relative; border: none; cursor: pointer; }
+        .btn-pasa:hover { background: var(--accent); transform: translateY(-3px); box-shadow: 0 10px 20px -5px rgba(0, 255, 136, 0.4); }
+        .btn-pasa:active { transform: translateY(-1px); }
+        .noise { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0.03; z-index: 10; background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC42NSIgbnVtT2N0YXZlcz0iMyIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNuKSIvPjwvc3ZnPg=='); }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+    <div class="noise"></div>
+    <div class="grid-bg"></div>
+    <div class="text-center px-6 relative">
+        <span class="text-[10px] tracking-[0.5em] text-emerald-500 font-bold uppercase mb-2 block animate-pulse">Nerdesin?</span>
+        <h1 class="glitch" data-text="404">404</h1>
+        <div class="mt-[-1rem]">
+            <h2 class="text-3xl font-extrabold tracking-tight">Şuan Yanlış Bir Yerdesin :D</h2>
+            <p class="text-gray-500 mt-4 max-w-sm mx-auto font-medium leading-relaxed">Böyle bir içerik olduğunu hiç sanmıyorum. Koordinatlarını kontrol et ;)</p>
+        </div>
+        <div class="mt-12">
+            <a href="/" class="btn-pasa inline-block no-underline">Geri Dön</a>
+        </div>
+        <div class="mt-16 pt-8 border-t border-white/5">
+            <p class="text-[10px] font-mono text-gray-600 uppercase tracking-widest">OMNi Forum | MOCA Dev.S</p>
+        </div>
+    </div>
+</body>
+</html>

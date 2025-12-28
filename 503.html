@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>503 - Bakım Çalışması | OMNi Forum</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #ffaa00; --bg: #050505; }
+        body { background: var(--bg); color: white; font-family: 'Plus Jakarta Sans', sans-serif; }
+        .loader { width: 48px; height: 48px; border: 5px solid #FFF; border-bottom-color: var(--accent); border-radius: 50%; display: inline-block; animation: rotation 1s linear infinite; }
+        @keyframes rotation { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen text-center">
+    <div class="px-6">
+        <div class="loader mb-8"></div>
+        <h1 class="text-6xl font-black mb-2">503</h1>
+        <h2 class="text-3xl font-bold uppercase tracking-tighter">Sistem Mevcut Değil</h2>
+        <p class="text-gray-400 mt-4 max-w-md mx-auto leading-relaxed">
+            OMNi Forum bakım çalışması! Anlayışınız için teşekkürler!
+        </p>
+        <div class="mt-10 p-4 border border-yellow-500/20 bg-yellow-500/5 rounded-lg inline-block">
+            <p class="text-yellow-500 text-sm font-mono">MOCA Dev.S</p>
+        </div>
+        <div class="mt-8">
+            <button onclick="location.reload()" class="text-white/50 hover:text-white transition-colors underline text-sm">Sayfayı Yenile</button>
+        </div>
+    </div>
+</body>
+</html>
