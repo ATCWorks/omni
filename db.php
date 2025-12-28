@@ -1,10 +1,10 @@
 <?php
-// Veritabanı Ayarları
-$host = 'sql112.infinityfree.com';
-$db   = 'if0_40557751_forum';
-$user = 'if0_40557751';
-$pass = '3eJqBCTM5TmZMe';
-$charset = 'utf8mb4';
+// Veritabanı Ayarları (Güvenlik nedeniyle kaldırıldı.)
+$host = '';
+$db   = '';
+$user = '';
+$pass = '';
+$charset = '';
 
 // DSN (Data Source Name) Tanımlaması
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
@@ -20,8 +20,7 @@ try {
     // Bağlantıyı oluştur
     $pdo = new PDO($dsn, $user, $pass, $options);
 } catch (\PDOException $e) {
-    // Bağlantı hatası durumunda işlemi durdur ve hatayı göster
-    // Not: Canlı ortamda detaylı hata mesajı güvenlik riski oluşturabilir, loglanmalıdır.
+    // Bağlantı hatası durumunda işlemi durdur ve hatayı göster.
     die("Veritabanı bağlantı hatası: " . $e->getMessage());
 }
 ?>
